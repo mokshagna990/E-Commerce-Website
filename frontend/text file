@@ -1,0 +1,134 @@
+MERN/
+├── backend/
+│   ├── config
+│   |   ├── db.js
+│   |   ├── logger.js
+│   ├── controllers
+│   |   ├── productControllers.js
+│   |   ├── userController.js
+│   |   ├── addressController.js
+│   |   ├── helpController.js
+|   |   └── recommendationController.js
+│   ├── logs
+│   |   ├── combined.logs
+│   |   ├── error.log
+│   ├── middleware/
+│   |   ├── authMiddleware.js
+│   ├── models/
+|   |   ├── productModel.js
+|   |   ├── userModel.js
+|   |   ├── cartModel.js
+|   |   ├── wishlistModel.js
+|   |   ├── orderModel.js
+│   |   ├── addressModel.js
+│   |   ├── couponModel.js
+│   ├── node_modules/
+|   ├── routes/
+|   |   ├── orderRoutes.js
+│   |   ├── productRoutes.js
+|   |   ├── cartRoutes.js
+|   |   ├── wishlistRoutes.js
+|   |   ├── addressRoutes.js
+|   |   ├── recommendationRoutes.js
+│   |   └── userRoutes.js
+|   ├── utils
+|   |   └── generateTokens.js
+│   ├── .env
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+│
+└── frontend/
+|   ├── %USERPROFILE%/
+|   ├── build/
+|   ├── node_modules/
+|   ├── public/
+|   |   ├── index.html
+|   ├── src/
+|   │   ├── aspects/
+|   │   │   └── loggingAspects.js
+|   │   ├── components/
+|   │   │   └── VoiceAssistant/
+|   │   │   |   ├── VoiceAssistant.js
+|   │   │   |   ├── VoiceAssistant.css
+|   │   │   |   ├── commands.js
+|   │   │   └── Chatbot/
+|   │   │   |   ├── Chatbot.js
+|   │   │   |   ├── Chatbot.css
+|   │   │   └── Header/
+|   |   |   |   ├── header.css
+|   │   │   |   └── header.js
+|   │   │   └── Profile/
+|   |   |   |   ├── HelpCentre.js
+|   |   |   |   ├── OrderHistory.js
+|   |   |   |   ├── SavedAddresses.js
+|   |   |   |   ├── UserCoupons.js
+|   │   │   |   └── userProfile.js
+|   |   |   ├── Addresses.js
+|   |   |   ├── cartItem.js
+|   |   │   ├── footer.js
+|   |   │   ├── loadingSpinner.js
+|   |   │   ├── productCard.js
+|   |   │   ├── ProductFilters.js
+|   |   |   ├── Recommendations.js
+|   |   │   ├── RegisterWithAOP.js
+|   │   ├── pages/
+|   │   │   ├── AdminDashboard.css
+|   │   │   ├── AdminDashboard.js
+|   │   |   ├── cart.js
+|   │   │   ├── home.js
+|   │   │   ├── productDetails.js
+|   │   │   ├── productDetails.Styles.js
+|   │   │   ├── profile.js
+|   │   │   ├── profile.css
+|   │   │   ├── login.js
+|   │   │   ├── wishlist.js
+|   │   │   ├── wishlist.Styles.js
+|   │   │   └── register.js
+|   |   ├──redux
+|   │   |   ├── slices/
+|   |   │   |   ├── addressSlice.js
+|   |   │   |   ├── authSlice.js
+|   |   │   |   ├── cartSlice.js
+|   |   │   |   ├── productSlice.js
+|   |   │   |   ├── wishlistSlice.js
+|   |   │   |   ├── couponSlice.js
+|   |   │   |   ├── helpSlice.js
+|   |   │   |   ├── orderSlice.js
+|   |   |   ├── store.js
+|   |   ├──services
+|   │   |   ├── loggerService.js
+|   |   │   ├── addressService.js
+|   |   ├── utils/
+|   │   ├── App.js
+|   │   ├── index.js
+|   │   ├── index.css 
+|   ├── .env
+|   ├── package-lock.json
+|   └── package.json
+
+elegancia24by7@gmail.com Elegancia24/7
+
+exceptional handling
+Aspect Oriented Programming
+Audit logs
+Session  through redis-JWT token based authentication
+API gateway approach
+
+1. Search and filtering optimization
+
+2. Product recommendation system
+
+3. Performance optimization
+
+4. Enhanced security features
+
+5. User experience improvements
+
+6. Analytics integration
+
+7. Payment processing
+
+8. Order tracking
+
+9. Inventory management

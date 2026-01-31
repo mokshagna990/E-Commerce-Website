@@ -1,0 +1,267 @@
+/* Main layout */
+.profile-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: calc(100vh - 80px); /* Matches your header height */
+  background: #f0f5ff;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px; /* Matches your nav-container max-width */
+  margin: 0 auto;
+}
+
+/* Sidebar styling */
+.profile-sidebar {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Matches header shadow */
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.profile-sidebar button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  border-radius: 4px; /* Matches nav-link border-radius */
+  font-size: 1rem; /* Matches nav-link font-size */
+  text-align: left;
+  color: #2c5282; /* Matches header background-color */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.profile-sidebar button:hover {
+  background: rgba(44, 82, 130, 0.1); /* Lighter version of header background */
+}
+
+.profile-sidebar button.active {
+  background: #2c5282; /* Matches header background-color */
+  color: white;
+}
+
+/* Main content area */
+.profile-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Matches header shadow */
+  padding: 25px;
+}
+
+/* Section headers */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0; /* Matches logo hover color */
+}
+
+.section-header h2 {
+  font-size: 1.5rem; /* Matches logo font-size */
+  color: #2c5282; /* Matches header background-color */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Address section */
+.saved-addresses {
+  width: 100%;
+}
+
+.addresses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.addresses-header h2 {
+  font-size: 1.5rem;
+  color: #2c5282;
+  font-weight: bold;
+  margin: 0;
+}
+
+.addresses-header button {
+  padding: 8px 16px; /* Matches nav-link padding */
+  background: #2c5282; /* Matches header background-color */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Matches nav-link border-radius */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem; /* Matches nav-link font-size */
+}
+
+.addresses-header button:hover {
+  background: #234771; /* Darker version of header background */
+}
+
+/* Form styling */
+.address-form {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 16px; /* Matches nav-link padding */
+  border: 1px solid #e2e8f0;
+  border-radius: 4px; /* Matches nav-link border-radius */
+  font-size: 1rem; /* Matches nav-link font-size */
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2c5282;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
+/* Add these to src/pages/profile.css */
+.saved-addresses {
+  padding: 20px;
+}
+
+.addresses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-address-btn {
+  background: #2c5282;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.address-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.address-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.address-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.address-card .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.address-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.address-info {
+  flex-grow: 1;
+}
+
+.address-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #2c5282;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ccbfbe;
+  color: white;
+}
+
+.address-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #2c5282;
+  color: white;
+}
+
+.form-buttons button[type="button"] {
+  background-color: #ccbfbe;
+  color: white;
+}
+
+.recommendations-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Aligns items at the center */
+}
+
+.card {
+  width: auto; /* Set a fixed width to keep consistency */
+  height: auto;
+}
+
